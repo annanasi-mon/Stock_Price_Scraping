@@ -26,3 +26,12 @@ ax[2].legend(["PE Ratio (TTM)"])
 ax[3].bar(year,data4,color="green")
 ax[3].legend(["EPS (TTM)"])
 plt.show()
+
+data.info()
+
+#Calculating sample statistics of all columns including float values
+data.describe()
+
+#Plotting box plots
+df = pd.DataFrame(data,columns=['Previous Close', 'Open', '1y Target Est'])
+df.plot.box()
