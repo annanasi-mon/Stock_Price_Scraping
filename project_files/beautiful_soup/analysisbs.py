@@ -35,3 +35,9 @@ data.describe()
 #Plotting box plots
 df = pd.DataFrame(data,columns=['Previous Close', 'Open', '1y Target Est'])
 df.plot.box()
+
+df = pd.DataFrame(data,columns=['Beta (5Y Monthly)'])
+df.boxplot()
+
+df = pd.DataFrame(data,columns=['Beta (5Y Monthly)'])
+df.boxplot()
